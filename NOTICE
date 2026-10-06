@@ -1,0 +1,33 @@
+DanmakuOverlay — a transparent danmaku overlay for macOS.
+Copyright (C) 2026 DanmakuOverlay contributors
+
+This program is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program (see
+LICENSE). If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-License-Identifier: GPL-3.0-only
+
+
+Third-party works
+-----------------
+
+This project contains code and data ported from the following projects, licensed under the GNU
+General Public License version 3. The ported parts were translated from C# to Swift and modified
+in 2026; docs/DEVELOPMENT.md ("Porting notes") describes the changes.
+
+* DanmakuPlayer — https://github.com/Poker-sang/DanmakuPlayer
+  by Poker-sang and contributors.
+  Danmaku track allocation (Models/Danmaku.Position.cs), the advanced (mode 7) danmaku model
+  and easing (Models/AdvancedDanmaku.cs), Bilibili XML / protobuf field layouts, and its port
+  of the pakku.js danmaku combiner and pinyin table.
+
+* pakku.js — https://github.com/xmcp/pakku.js
+  by xmcp.
+  The similar-danmaku merging algorithm and the pinyin table used for homophone matching,
+  ported via DanmakuPlayer.

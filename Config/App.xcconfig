@@ -1,0 +1,23 @@
+// App target settings. Kept outside project.pbxproj so the IDE never rewrites them.
+//
+// The defaults build an ad-hoc signed app with a placeholder bundle identifier. To sign with your own
+// identity (so Accessibility permission survives rebuilds), create Config/Local.xcconfig, which is
+// git-ignored, and override e.g. PRODUCT_BUNDLE_IDENTIFIER, CODE_SIGN_IDENTITY and DEVELOPMENT_TEAM.
+PRODUCT_BUNDLE_IDENTIFIER = com.example.DanmakuOverlay
+MARKETING_VERSION = 0.1.0
+CURRENT_PROJECT_VERSION = 1
+
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_IDENTITY = -
+DEVELOPMENT_TEAM =
+ENABLE_HARDENED_RUNTIME = YES
+CODE_SIGN_ENTITLEMENTS = DanmakuOverlay/Resources/DanmakuOverlay.entitlements
+
+INFOPLIST_FILE = DanmakuOverlay/Resources/Info.plist
+INFOPLIST_KEY_LSUIElement = YES
+INFOPLIST_KEY_NSHumanReadableCopyright = Copyright © 2026 DanmakuOverlay contributors. GPL-3.0-only.
+INFOPLIST_KEY_NSAppleEventsUsageDescription = DanmakuOverlay reads the playback position of IINA, VLC and web browsers to keep danmaku in sync.
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ENABLE_PREVIEWS = YES
+
+#include? "Local.xcconfig"
